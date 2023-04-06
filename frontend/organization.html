@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Page</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        background-color: #4c57af;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .navbar h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+      
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      
+      .navbar li {
+        margin-left: 20px;
+      }
+      
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      .post {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #999;
+        width: 600px;
+        padding: 20px;
+        margin: 100px auto 0;
+      }
+      
+      .post h2 {
+        font-size: 24px;
+        margin-top: 0;
+      }
+      
+      .post p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px 0;
+      }
+      
+      .post .author {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      
+      .post .date {
+        font-size: 12px;
+        color: #999;
+      }
+
+      .add-button {
+        background-color: #4c57af;
+        border: none;
+        color: white;
+        font-size: 36px;
+        padding: 10px 15px;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        cursor: pointer;
+        border-radius: 60%;
+      }
+
+      {
+        box-sizing: border-box;
+      }
+      .openBtn {
+        display: flex;
+        justify-content: left;
+      }
+      .openButton {
+        border: none;
+        border-radius: 5px;
+        background-color: #1c87c9;
+        color: white;
+        padding: 14px 20px;
+        cursor: pointer;
+        position: fixed;
+      }
+      .loginPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+      .formPopup {
+        display: none;
+        position: fixed;
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+      }
+      .formContainer {
+        max-width: 500px;
+        padding: 20px;
+        background-color: #fff;
+      }
+      .formContainer input[type=text],
+      .formContainer input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #eee;
+      }
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      .formContainer .btn {
+        padding: 12px 20px;
+        border: none;
+        background-color: #5257ab;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.8;
+      }
+      .formContainer .cancel {
+        background-color: #3a88cc;
+      }
+      .formContainer .btn:hover,
+      .openButton:hover {
+        opacity: 1;
+      }
+
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Eduvent</h1>
+        <ul>
+          <li><a href="mainpage.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">11</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="post">
+      <h2>Computing Workshop Volunter Opportunity</h2>
+      <div class="author">Posted by London Middle School</div>
+      <div class="date">Posted on April 1, 2023</div>
+      <p>Helping Year 9 girls learn basic porgramming skills</p>
+      <!--<a  class="signup-button">Sign up for this event</a>-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <style id="compiled-css" type="text/css">
+
+    input[type="button"] {
+
+       margin:11px 6px 11px 6px;
+       border-radius: 5px;
+
+       -webkit-appearance:button;
+
+       cursor:pointer;
+
+       font-weight:normal;
+
+       font-size:14px;
+
+       padding:10px 16px;
+
+       text-transform:uppercase;
+
+       -webkit-box-sizing:content-box;
+
+       -moz-box-sizing:content-box;
+
+       box-sizing:content-box;
+
+       box-shadow:none;
+
+       cursor:pointer;
+
+       text-align:center;
+
+       -o-text-overflow:clip;
+
+       text-overflow:clip;
+
+       letter-spacing:2px;
+
+       background:#4379c0;
+
+       transition:0.4s;
+
+    }
+
+   
+
+    input[type="button"]:hover {
+
+       background:#4e5bad;
+
+       border:3px solid WhiteSmoke;
+
+       color:#eeeff1;
+
+    }
+
+   
+
+    html input[type="button"]:active {
+
+       border:3px solid blue;
+
+       background:pink;
+
+       color:WhiteSmoke;
+
+       -webkit-box-shadow:0px 2px 2px 0px OrangeRed;
+
+       -moz-box-shadow:0px 2px 2px 0px grey;
+
+       -o-box-shadow:0px 2px 2px 0px BlueViolet;
+
+       box-shadow:0px 2px 2px 0px Chartreuse;
+
+    }
+
+    </style>
+
+   
+
+     </head>
+
+     <body>
+
+      <input value="Sign up" type="button" onclick="this.disabled=true; this.value='Signed up';location.href='#'"> 
+    </div>
+    
+    <div class="post">
+        <h2>University Application Advice Session Talker</h2>
+        <div class="author">Posted by London High School</div>
+        <div class="date">Posted on April 6, 2023</div>
+        <p>Guilding six form students about university application process</p>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <style id="compiled-css" type="text/css">
+
+    input[type="button"] {
+
+       margin:11px 6px 11px 6px;
+       border-radius: 5px;
+
+       -webkit-appearance:button;
+
+       cursor:pointer;
+
+       font-weight:normal;
+
+       font-size:14px;
+
+       padding:10px 16px;
+
+       text-transform:uppercase;
+
+       -webkit-box-sizing:content-box;
+
+       -moz-box-sizing:content-box;
+
+       box-sizing:content-box;
+
+       box-shadow:none;
+
+       cursor:pointer;
+
+       text-align:center;
+
+       -o-text-overflow:clip;
+
+       text-overflow:clip;
+
+       letter-spacing:2px;
+
+       background:#4379c0;
+
+       transition:0.4s;
+
+    }
+
+   
+
+    input[type="button"]:hover {
+
+       background:#4e5bad;
+
+       border:3px solid WhiteSmoke;
+
+       color:#eeeff1;
+
+    }
+
+   
+
+    html input[type="button"]:active {
+
+       border:3px solid blue;
+
+       background:pink;
+
+       color:WhiteSmoke;
+
+       -webkit-box-shadow:0px 2px 2px 0px OrangeRed;
+
+       -moz-box-shadow:0px 2px 2px 0px grey;
+
+       -o-box-shadow:0px 2px 2px 0px BlueViolet;
+
+       box-shadow:0px 2px 2px 0px Chartreuse;
+
+    }
+
+    </style>
+
+   
+
+     </head>
+
+     <body>
+
+      <input value="Sign up" type="button" onclick="this.disabled=true; this.value='Signed up';location.href='#'"> 
+      </div>
+
+      <div class="openBtn">
+        <button class="openButton" onclick="openForm()"><strong>Add Event</strong></button>
+      </div>
+      <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+          <form action="/action_page.php" class="formContainer">
+            <h2 style="font-family: Verdana">
+              Create an event
+            </h2>
+            <label for="Name of your event">
+              <strong style="font-family: Verdana"> 
+                  Name of your event</strong>
+            </label>
+            <input type="text" id="Name" style="font-family: Verdana" placeholder="Name" name="name" required>
+            <label for="nbr">
+              <strong style="font-family: Verdana"> 
+                  Number of volounteers required </strong>
+            <br>
+            </label>
+            <br>
+            <input type="number" id="Num" style="font-family: Verdana" placeholder="Enter number" name="num" required>
+            <br>
+            <br>
+           <label for="Description">
+            <strong style="font-family: Verdana"> 
+              Description</strong>
+           </label>
+           <br>
+            <textarea id="freeform" name="freeform" rows="10" cols="50">
+            </textarea><br><br>
+           
+           
+            <button type="submit" class="btn" style="font-family: Verdana">Submit</button>
+            <button type="button" class="btn cancel" style="font-family: Verdana" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+      <script>
+        function openForm() {
+          document.getElementById("popupForm").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("popupForm").style.display = "none";
+        }
+      </script>
+</body>
